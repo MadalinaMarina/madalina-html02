@@ -8,32 +8,33 @@ body {
 .box {
   width: 150px;
   height: 150px;
-  border: 1px solid #000S;
+  border: 1px solid #000;
 }
 
 .box-1 {
-  margin-top: $sm;
+  margin-top: $sm + ($xs / 2);
+  padding-left: $sm - 2;
 }
 
 .box-2 {
-  margin: $sm $xl;
-  padding: $md;
+  margin: ($sm + $md) $xl $sm $xl;
+  padding: ($xs + $sm) / 2;
 }
 
 .box-3 {
-  padding: $lg 0 0 0;
-  border-width: $sm;
-  margin-right: $lg;
+  padding: $lg - 2 0 0 0;
+  border-width: $sm / 4;
+  margin-right: $lg / 16;
 }
 
 .box-4 {
-  margin-top: $lg; 
-  border-width: $md;
-  padding: 25px;
+  margin-top: $xl + $sm - $xs/2;
+  border-width: $xs/2;
+  padding: 12px;
 }
 
 .box-5 {
-  margin: $sm $xl;
-  border-width: $md; 
-  padding: $lg;
+  margin: $xl - $xs $xs/2;
+  border-width: $md - 13px; 
+  padding: 2px 2px 2px $lg - $md - $sm + $xs/2;
 }
