@@ -29,3 +29,9 @@ $colors: (
     color: $color-value;
   }
 }
+
+@each $color-name, $color-value in $colors {
+  .btn-bg-#{$color-name} {
+    background-color: $color-value;
+  }
+}
