@@ -70,6 +70,33 @@
   flex-grow: 2;
 }
 
-.flex-container-0 {
+.flex-container-04 {
+  flex-direction: row-reverse;
+  align-items: center;
+}
 
+.flex-container-04 :last-child {
+  flex-grow: 1;
+}
+
+.flex-container-05 {
+align-items: flex-end;
+}
+
+.flex-item-2 {
+  flex-grow: 1;
+}
+
+.flex-container-05 :nth-of-type(4) {
+  flex-grow: 2;
+}
+
+.flex-container-06 {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+/* elementul 3 de dupa sau de dinaintea row-reverse? */
+.flex-container-06 :nth-of-type(4) {
+  flex-grow: 1;
 }

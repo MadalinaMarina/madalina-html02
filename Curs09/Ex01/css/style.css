@@ -39,7 +39,7 @@
 /* do not touch this */
 
 .flex-container-01 {
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -64,12 +64,12 @@
 
 .flex-container-05 {
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .flex-container-06 {
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }

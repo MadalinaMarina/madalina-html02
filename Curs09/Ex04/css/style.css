@@ -75,10 +75,25 @@
   justify-content: center;
 }
 
-.flex-container-05 {
+.flex-container-04 :last-child {
+  align-self: center;
+}
 
+.flex-container-05 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#item-3 {
+  align-self: stretch;
+  height: auto;
 }
 
 .flex-container-06 {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
 
+.flex-item-3 {
+  align-self: flex-end;
 }
