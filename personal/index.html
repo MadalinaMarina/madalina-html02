@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+    * {
+      color: rgba(0, 0, 0, .7);
+      margin: 0;
+      padding: 0;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.3;
+      text-decoration: none;
+      word-break: normal;
+      box-sizing: border-box;
+      outline: none;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+
+    html,
+    body {
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    .body {
+      width: 581px;
+      margin: 0 auto;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    tr {
+      border-collapse: collapse;
+    }
+
+    td {
+      display: table-cell;
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h1 {
+      display: inline;
+      font-size: 18px;
+    }
+
+    h2 {
+      display: inline;
+      font-size: 16px;
+    }
+
+    h3 {
+      display: inline;
+      font-size: 14px;
+    }
+
+    h4 {
+      display: inline;
+      font-size: 12px;
+    }
+
+    h5 {
+      display: inline;
+      font-size: 10px;
+    }
+
+    h6 {
+      display: inline;
+      font-size: 8px;
+    }
+
+    small {
+      font-size: 10px;
+    }
+
+    a {
+      color: #000!important;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #000!important;
+      font-weight: normal;
+    }
+
+    a:active {
+      color: #000!important;
+      font-weight: normal;
+    }
+
+    a:visited {
+      color: #000!important;
+      font-weight: normal;
+    }
+
+    .header {
+      width: 100%;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      padding: 0 0 10px 0;
+    }
+
+    .center {
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .underline {
+      width: 581px;
+      margin: 20px auto 0 auto;
+      border-bottom: 1px solid #333;
+    }
+
+    .upperline {
+      width: 581px;
+      border-top: 1px solid #333;
+    }
+
+    .expander {
+      visibility: hidden;
+      width: 0px;
+      padding: 0;
+    }
+
+    .button {
+      display: inline-block;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+      padding: 5px 12px;
+      vertical-align: top;
+      text-align: center;
+      color: #333;
+      font-weight: normal;
+      line-height: 19px;
+      font-size: 14px;
+      box-sizing: border-box;
+      background: #fff;
+      border: 1px solid #333;
+      border-collapse: collapse;
+      width: 130px !important;
+    }
+
+    .button:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hide-small {
+      display: table-cell;
+    }
+
+    .hide-big {
+      position: absolute;
+      left: -999999px;
+    }
+
+    .body.special {
+      float: right;
+      width: 290px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .body {
+        width: 100% !important;
+      }
+
+      .header {
+        display: block!important; 
+        width: 100% !important;
+        height: 100%;
+      }
+
+      .content {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .mobile {
+        width: 100%;
+        font-size: 1.5rem;
+        float: left;
+        line-height: 22px;
+      }
+
+      .upperline {
+        width: 100%;
+        margin: 15px 0 !important;
+        border-top: 1px solid #333;
+      }
+
+      .logo {
+        width: 50% !important;
+        text-align: center;
+        margin: 0 auto !important;
+      }
+
+      .mb {
+        padding: 0 0 40px 0 !important;
+      }
+
+      .pt {
+        padding: 10px 0 0 0;
+      }
+
+      a.button {
+        margin: 10px auto !important;
+      }
+
+      a.title {
+        margin: 10px 0 0 0;
+        padding: 0 !important;
+      }
+
+      td.left,
+      td.right {
+        width: 100% !important;
+        display: block !important;
+        text-align: center !important;
+        padding: 20px 0 5px 0 !important;
+      }
+
+      .body.special {
+        width: 100%;
+      }
+
+      .m-align {
+        padding: 20px 5px 20px 30px !important;
+      }
+
+      .m-icons {width: 140px!important;}
+
+    }
+
+    @media only screen and (max-width: 375px) {
+      .m-align {
+        padding: 20px 5px 20px 20px !important;
+      }
+
+      .m-icons {width: 130px!important;}
+    }
+    @media only screen and (max-width: 320px) {
+      .m-align {
+        padding: 20px 5px 20px 10px !important;
+      }
+
+      .m-icons {width: 130px!important;}
+    }
+    @media only screen and (max-width: 600px) {
+      .hide1 {
+        display: none!important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="body header underline center">
+    <tbody>
+      <tr style="display: inline-block;">
+        <td class="left logo center">
+          <a target='_blank' href="https://www.artmark.ro/ro/licitatii/curente">
+            <img class="logo" src="http://newsletter.artmark.ro/artsmart-issue-581/A10.png" alt="A10">
+          </a>
+        </td>
+        <td class="mobile right" style="width: 375px; vertical-align: middle; padding: 0 0 6px 0;">
+          <a href="https://www.artmark.ro/am-live" target="_blank" style="font-weight: 400; padding: 0 20px 0 0;">
+            <h2 style="font-weight:400;">CUM LICITEZ ONLINE</h2>
+          </a>
+          <a href="https://www.artmark.ro/ro/cum-cumpar" target="_blank" style="font-weight: 400;">
+            <h2 style="font-weight:400;">CUM CUMPĂR</h2>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="left header" style="display: block; width: 100%; padding: 0 0 20px 0;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-de-vinuri-de-vara-sampanii-de-colectie-365-2020" target='_blank'>
+            <img class="header" src="http://newsletter.artmark.ro/artsmart-issue-585/contemporan.jpg" alt="header">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="body">
+    <tbody>
+    <tr>
+        <td class="center" style="padding: 20px 0 20px 0 !important;">
+          <p class="center">
+            Vinuri de vară și șampanii rare la prețuri fără rival. O selecție fină, adunată de la marile branduri ale Frantei, Italiei și lumii noi, vă va relaxa la începutul sezonului cald. Postați o ofertă online ori licitați online - și vi le livrăm acasă a doua zi după adjudecare!
+          </p>
+        </td>
+      </tr>
+      <tr style="display: block;">
+        <td class="center content pt underline" style="padding: 20px 0 0 0 !important;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-de-vinuri-de-vara-sampanii-de-colectie-365-2020" class="title" style="padding: 0 0 0 5px; display: block;">
+            <span class="center" style="display: inline; font-size: 18px; text-align: right; font-weight:normal; color:#333; height: auto; text-transform: uppercase;">Licitația de Vinuri de Vară & Șampanii de Colecție </span>
+          </a>
+          <h2>Joi, 28 mai 2020, ora 19:30</h2><br>
+          <h2>ONLINE ONLY</h2> <br>
+          <a class="button" href="https://www.artmark.ro/ro/am-live" target='_blank' style="padding: 7px 0px; font-weight: normal; color:#333; margin: 20px 10px 0 0; font-size: 11px;  text-transform: uppercase;">
+            <h3 style="font-weight: normal; font-size: 11px; text-transform: uppercase;">Cum licitez online</h3>
+          </a>
+          <a class="button" href="https://www.artmark.ro/ro/licitatie/licitatia-de-vinuri-de-vara-sampanii-de-colectie-365-2020" target='_blank' style="padding: 7px 10px; font-weight:normal; color:#333; margin: 20px auto;">
+            <h3 style="font-weight: normal;">VEZI LICITAȚIA</h3>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="left" style="padding: 20px 0;">
+          <span class="left" style="display: block; font-size: 14px; font-weight: normal;">Licitații curente:</span>
+        </td>
+      </tr>
+      <tr style="display: block;">
+        <td class="left header" style="width: 290px;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-postbelica" target='_blank'>
+            <img class="header" src="http://newsletter.artmark.ro/artsmart-issue-584/contemporan.jpg" alt="header2">
+          </a>
+        </td>
+        <td class="right content pt" style="width: 290px; padding: 0 0 40px 0;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-postbelica" class="title" style="padding: 0 0 0 5px; display: inline-block;">
+            <span class="center" style="display: inline; font-size: 12px; text-align: right; font-weight:normal; color:#333; height: auto; text-transform: uppercase;">Licitația de Artă Postbelică și Contemporană, inclusiv fragmente din Colecția Scriitoarei Ileana Vulpescu și din Colecția Jean-Philippe Guilbert</span>
+          </a>
+          <br>
+          <p style="font-size: 12px;">Marți, 19 mai 2020, ora 19:30</p>
+          <p style="font-size: 12px;">ONLINE ONLY</p>
+          <a class="button" href="https://www.artmark.ro/ro/am-live" target='_blank' style="padding: 7px 0px; font-weight: normal; color:#333; margin: 10px 10px 0 0; font-size: 11px;  text-transform: uppercase;">
+            <h3 style="font-weight: normal; font-size: 11px; text-transform: uppercase;">Cum licitez online</h3>
+          </a>
+          <a class="button" href="https://www.artmark.ro/ro/licitatie/licitatia-postbelica" target='_blank' style="padding: 7px 10px; font-weight:normal; color:#333; margin: 10px 0 0 0;">
+            <h3 style="font-weight: normal;">VEZI LICITAȚIA</h3>
+          </a>
+        </td>
+      </tr>
+      <tr style="display: block;">
+        <td class="left header" style="width: 290px;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-vechi-si-nou" target='_blank'>
+            <img class="header" src="http://newsletter.artmark.ro/artsmart-issue-585/vechinou.jpg" alt="header2">
+          </a>
+        </td>
+        <td class="right content pt" style="width: 290px; padding: 0 0 40px 0;">
+          <a href="https://www.artmark.ro/ro/licitatie/licitatia-vechi-si-nou" class="title" style="padding: 0 0 0 5px; display: inline-block;">
+            <span class="center" style="display: inline; font-size: 18px; text-align: right; font-weight:normal; color:#333; height: auto; text-transform: uppercase;">Licitația Vechi și Nou</span>
+          </a>
+          <br>
+          <p style="font-size: 16px;">Miercuri, 20 mai 2020, ora 19:30</p>
+          <p style="font-size: 16px;">ONLINE ONLY</p>
+          <a class="button" href="https://www.artmark.ro/ro/am-live" target='_blank' style="padding: 7px 0px; font-weight: normal; color:#333; margin: 50px 10px 0 0; font-size: 11px;  text-transform: uppercase;">
+            <h3 style="font-weight: normal; font-size: 11px; text-transform: uppercase;">Cum licitez online</h3>
+          </a>
+          <a class="button" href="https://www.artmark.ro/ro/licitatie/licitatia-vechi-si-nou" target='_blank' style="padding: 7px 10px; font-weight:normal; color:#333; margin: 50px 0 0 0;">
+            <h3 style="font-weight: normal;">VEZI LICITAȚIA</h3>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="body special">
+            <tr style="display: block;">
+              <td class="right header" style="width: 290px;">
+                <a href="https://www.artmark.ro/ro/licitatie/licitatia-de-ceasuri" target='_blank'>
+                  <img class="header" style="margin-bottom: 20px!important;" src="http://newsletter.artmark.ro/artsmart-issue-585/ceasuri.jpg" alt="header2">
+                </a>
+              </td>
+            </tr>
+          </table>
+          <table class="body special">
+            <tr style="display: block;">
+              <td class="left content mb hide-small" style="width: 290px; padding: 0 0 40px 0;">
+                <a href="https://www.artmark.ro/ro/licitatie/licitatia-de-ceasuri" style="padding: 0 5px 0 0; display: inline-block; text-transform: uppercase;" class="title">
+                  <span class="center" style="display: inline; font-size: 18px; text-align: left; font-weight:normal; color:#333; height: auto; text-transform: uppercase;">Licitația unei Importante<span class="hide1" style="display: inline; font-size: 18px; text-align: left; font-weight:normal; color: white; height: auto; text-transform: uppercase;">2. </span> Colecții de Ceasuri</span>
+                </a>
+                <br>
+                <h2>Marți, 26 mai 2020, ora 19:30</h2>  <br>
+                <p style="font-size: 16px;">ONLINE ONLY</p> 
+                <a class="button" href="https://www.artmark.ro/ro/am-live" target='_blank' style="padding: 7px 0px; font-weight: normal; color:#333; margin: 27px 10px 0 0; font-size: 11px;  text-transform: uppercase;">
+                  <h3 style="font-weight: normal; font-size: 11px; text-transform: uppercase;">Cum licitez online</h3>
+                </a>
+                <a class="button" href="https://www.artmark.ro/ro/licitatie/licitatia-de-ceasuri" target='_blank' style="padding: 7px 10px; font-weight:normal; color:#333; margin: 27px 10px 0 0;">
+                  <h3 style="font-weight: normal;">VEZI LICITAȚIA</h3>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="upperline">
+        <td class="left header m-font" style="display: block; width: 100%; padding: 40px 0 20px 0; font-size: 18px;">
+          <a class="m-font" href="https://www.artmark.ro/ro/certificat-cadou" target='_blank' style="font-size: 18px;">
+            <span class="m-font" style="font-weight: normal; color: #333; padding: 0 0 5px 0; font-size: 18px;">
+              DĂRUIEȘTE ARTĂ! <br>SURPRINDE-I PE CEI DRAGI CU UN CADOU INEDIT!
+            </span>
+            <img class="header" src="http://newsletter.artmark.ro/artsmart-issue-581/cadou.jpg" alt="header" style="margin: 10px 0 0 0;">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="body upperline underline">
+    <tbody style="display: block;">
+      <tr style="display: block;">
+        <td style="padding: 20px 0 0 0 !important;">
+          <a href="https://www.artmark.ro/ro/am-live" target="_blank">
+            <span style="font-weight: normal; color: #333; padding: 0 0 5px 0; font-size: 18px;">
+              Poți participa la licitațiile Artmark de la distanță
+            </span>
+          </a> 
+        </td>
+      </tr>  
+      <tr>
+        <td class="m-align" style="padding:20px 25px 20px 0; float: left; display: inline!important;">
+          <span style="display: inline; font-size: 12px!important; text-align: left;">OFERTĂ PE SITE</span> <br>
+          <a href="https://www.artmark.ro/ro/licitatii/curente" style="font-size: 12px!important;">
+            <img class="m-icons" src="http://newsletter.artmark.ro/artsmart-issue-583/icon1.png" alt="icon" style="display: inline!important; width: 100px; margin: 13px 0 0 0;">
+          </a> <br>
+          <span style="display: inline; font-size: 12px!important; text-align: left;">Plasează o ofertă <br>pe site</span>
+        </td>
+        <td class="m-align" style="padding: 20px 25px 20px 25px; float: left!important; display: inline!important;">
+          <span style="display: inline; font-size: 12px!important; text-align: left;">LICITEAZĂ PRIN <br>TELEFON</span> <br>
+          <a href="https://www.artmark.ro/assets/pdf/formular_unic_mart_2019.pdf" style="font-size: 12px!important;">
+            <img class="m-icons" src="http://newsletter.artmark.ro/artsmart-issue-583/icon2.png" alt="icon" style="display: inline!important; width: 100px;">
+          </a> <br>
+          <span style="display: inline; font-size: 12px!important; text-align: left;">Ne transmiți <br>formularul</span>
+        </td>
+        <td class="m-align" style="padding: 20px 25px 20px 25px; float: left!important; display: inline!important;">
+          <span style="display: inline; font-size: 12px!important; text-align: left;">OFERTĂ SCRISĂ</span> <br>
+          <a href="https://www.artmark.ro/assets/pdf/formular_unic_mart_2019.pdf" style="font-size: 12px!important;">
+            <img class="m-icons" src="http://newsletter.artmark.ro/artsmart-issue-583/icon3.png" alt="icon" style="display: inline!important; width: 100px; margin: 13px 0 0 0;">
+          </a> <br>
+          <span style="display: inline; font-size: 12px!important; text-align: left;">Ne transmiți <br>formularul</span>
+        </td>
+        <td class="m-align" style="padding: 20px 0 20px 25px; float: left!important; display: inline!important;">
+          <span style="display: inline; font-size: 12px!important; text-align: left;">LICITEAZA ONLINE <br>LIVE</span><br>
+          <a href="https://www.artmark.ro/ro/inregistrare" style="font-size: 12px!important;">
+            <img class="m-icons" src="http://newsletter.artmark.ro/artsmart-issue-583/icon4.png" alt="icon" style="display: inline!important; width: 100px;">
+          </a> <br>
+          <span style="display: inline-block; font-size: 12px!important; text-align: left;">Ai nevoie de un <br>cont activ!</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="body center">
+    <tbody>
+      <tr>
+        <td style="text-align: center; vertical-align:middle; padding: 20px 0;">
+          <a href="https://www.facebook.com/galeriileartmark">
+            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-facebook-48.png" alt="Facebook" style="display: inline; width: 40px!important; height: 40px!important; border-right: 1px solid rgba(0, 0, 0, 0.7);">
+          </a>
+          <a href="https://www.youtube.com/user/artmarktv">
+            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-youtube-48.png" alt="YouTube" style="display: inline; width: 40px!important; height: 40px!important; border-right: 1px solid rgba(0, 0, 0, 0.7);">
+          </a>
+          <a href="https://instagram.com/artmark_galleries/">
+            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-instagram-48.png" alt="Instagram" style="display: inline; width: 40px!important; height: 40px!important; border-right: 1px solid rgba(0, 0, 0, 0.7);">
+          </a>
+          <a href="http://www.linkedin.com/company/294050">
+            <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-linkedin-48.png" alt="Linkedin" style="display: inline; width: 40px!important; height: 40px!important;">
+          </a>
+        </td>
+    </tbody>
+  </table>
+  <table class="body center">
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align: center;">
+            &copy; <a href="https://www.artmark.ro/" style="text-align: center; font-weight: normal; color: #333;" target="_blank">Artmark Holding</a> | <a href="https://www.artmark.ro/Nota_de_informare_Artmark.pdf" style="font-family: Montserrat,sans-serif; font-weight: normal; text-align: center; text-decoration: none; font-weight: normal; color: #333;" target="_blank">Politică de confidențialitate</a> | <a href="*|UNSUB|*" style="font-family: Montserrat,sans-serif; font-weight: normal; text-align: center; text-decoration: none; font-weight: normal; color: #333;" target="_blank">Dezabonează-te</a> | <a href="*|UPDATE_PROFILE|*" style="font-family: Montserrat,sans-serif; font-weight: normal; text-align: center; text-decoration: none; font-weight: normal; color: #333;" target="_blank">Preferințe</a>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
