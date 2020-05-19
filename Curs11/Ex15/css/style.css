@@ -21,11 +21,36 @@
   background-color: lightsalmon
 }
 
-.grid-item-4 {
+.grid-item-5 {
   background-color: lightyellow;
 }
 
 /* can't touch this 🔨 */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "filters"
+    "main"
+    "sidebar"
+    "footer";
+
+  max-width: 1290px;
+  width: 100%;
+}
+
+@media (max-width: 519px) {
+  .grid-container {
+    grid-template-areas: 
+    "header"
+    "filters"
+    "main"
+    "footer";
+  }
+}
+
+
 
 
 
