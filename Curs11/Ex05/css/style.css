@@ -26,8 +26,6 @@
 }
 /* can't touch this 🔨 */
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 120px 1fr 20% 315px 200px 2fr;
@@ -52,3 +50,5 @@
   grid-column: 3 / span 3;
   grid-row: -3 / -1;
 }
+
+
