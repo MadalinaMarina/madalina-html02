@@ -27,26 +27,55 @@
 
 /* can't touch this 🔨 */
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    "header"
-    "filters"
-    "main"
-    "sidebar"
-    "footer";
-
-  max-width: 1290px;
-  width: 100%;
+.grid-item-1 {
+  grid-area: header;
 }
 
-@media (max-width: 519px) {
+.grid-item-2 {
+  grid-area: filters;
+}
+
+.grid-item-3 {
+  grid-area: main;
+}
+
+.grid-item-4 {
+  grid-area: sidebar;
+}
+
+.grid-item-5 {
+  grid-area: footer;
+}
+
+
+@media (max-width: 376px) {
   .grid-container {
+    display: grid;
     grid-template-areas: 
-    "header"
-    "filters"
-    "main"
-    "footer";
+      "header"
+      "filters"
+      "main"
+      "sidebar"
+      "footer";
+  
+    max-width: 1290px;
+    width: 100%;
+  }
+
+  .grid-item-4 {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar . filters"
+      "sidebar . main"
+      "footer footer footer";
+    grid-template-columns: 400px 10px 1fr;
   }
 }
 
